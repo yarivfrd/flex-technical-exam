@@ -1,0 +1,108 @@
+body {
+  display: grid;
+  color: #333;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  font-size: inherit;
+  border: none;
+}
+
+button {
+  border: none;
+  font-size: inherit;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header h1,
+footer .inner {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 30px;
+  background-color: #333;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 20px 30px;
+  background-color: #333;
+  color: white;
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .tmdb-logo {
+  width: 150px;
+}
+
+footer .attribution-caption {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  color: tomato;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 740px) {
+  header {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer .tmdb-logo {
+    width: 100px;
+  }
+
+  footer .attribution-caption {
+    text-transform: uppercase;
+    font-size: 8px;
+    text-align: right;
+  }
+}

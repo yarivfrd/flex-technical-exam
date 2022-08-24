@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/movie.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <title>Movie Page</title>
+</head>
+
+<body>
+  <header>
+    <h1>Movie Library</h1>
+  </header>
+  <main class="is-loading">
+    <div class="wrapper">
+      <div class="left">
+        <img class="movie-poster" src="" alt="Movie poster">
+      </div>
+      <div class="right">
+        <h2 class="movie-title"></h2>
+        <div class="inner">
+          <div class="release-date"></div>
+          •
+          <ul class="genres"></ul>
+        </div>
+        <p class="overview">...</p>
+        <input type="checkbox" id="favorite-toggle">
+        <label for="favorite-toggle"></label>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <img class="tmdb-logo" src="./images/tmdb-logo.svg" alt="TMDB Logo">
+      <div class="attribution-caption">This product uses the TMDB API but is not endorsed or certified by TMDB</div>
+    </div>
+  </footer>
+  <script src="../scripts/movie.js"></script>
+</body>
+
+</html>

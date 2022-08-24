@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <title>Movie Library</title>
+</head>
+
+<body>
+  <header>
+    <h1>Movie Library</h1>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="feed">
+        <div class="controls">
+          <div class="feed-filter-controls">
+            <div class="filter-control">
+              <input autocomplete="off" checked type="radio" name="filter-type" id="popular">
+              <label for="popular">Popular</label>
+            </div>
+            <div class="filter-control">
+              <input autocomplete="off" type="radio" name="filter-type" id="live">
+              <label for="live">Now Playing</label>
+            </div>
+            <div class="filter-control">
+              <input autocomplete="off" type="radio" name="filter-type" id="favorite">
+              <label for="favorite">My Favorites</label>
+            </div>
+          </div>
+          <div class="pagination-controls">
+            <button disabled class="prev-page">Prev</button>
+            <input class="current-page" autocomplete="off" maxlength="3" value="1" type="text" /> of <span class="total-pages">...</span>
+            <button class="next-page">Next</button>
+          </div>
+        </div>
+        <ul class="item-list">Loading Movies...</ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <img class="tmdb-logo" src="./images/tmdb-logo.svg" alt="TMDB Logo">
+      <div class="attribution-caption">This product uses the TMDB API but is not endorsed or certified by TMDB</div>
+    </div>
+  </footer>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
