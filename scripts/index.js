@@ -94,7 +94,7 @@ function updateFeedDOM(moviesData) {
     const movieItemEl = document.createElement('li');
     movieItemEl.classList.add('movie-item');
     movieItemEl.innerHTML = `
-      <a href="/pages/movie.html?id=${id}">
+      <a href="pages/movie.html?id=${id}">
         <img class="movie-poster" src="https://image.tmdb.org/t/p/w200${poster_path}" alt="${title}">
       </a>
     `;
